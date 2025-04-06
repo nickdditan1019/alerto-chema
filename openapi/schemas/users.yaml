@@ -1,0 +1,34 @@
+type: object
+properties:
+  uuids:
+    type: array
+    items:
+      type: string
+    description: "List of UUID strings"
+  fname:
+    type: string
+    description: "First name of the user"
+  lname:
+    type: string
+    description: "Last name of the user"
+  gender:
+    type: string
+    description: "Gender of the user"
+  mobileNumber:
+    type: string
+    description: "User's mobile number"
+  password:
+    type: string
+    description: "User's hashed password"
+  tuya:
+    type: object
+    properties:
+      username:
+        type: string
+        description: "Tuya username"
+      password:
+        type: string
+        description: "Tuya password"
+      uid:
+        type: string
+        description: "Tuya user ID"

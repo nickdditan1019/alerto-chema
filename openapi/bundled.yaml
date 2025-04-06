@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Alerto API",
+    "title": "Alerto Stage API",
     "version": "1.0.0",
-    "description": "API schema for Alerto system."
+    "description": "API schema for Alerto Stage system."
   },
   "paths": {},
   "components": {
@@ -173,6 +173,974 @@
             "additionalProperties": {
               "type": "string"
             }
+          }
+        }
+      },
+      "assets": {
+        "type": "object",
+        "properties": {
+          "accountId": {
+            "type": "string"
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "city": {
+                "type": "string"
+              },
+              "full": {
+                "type": "string"
+              },
+              "island": {
+                "type": "string"
+              },
+              "municipality": {
+                "type": "string"
+              },
+              "province": {
+                "type": "string"
+              },
+              "region": {
+                "type": "string"
+              }
+            }
+          },
+          "brgyId": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "comId": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "description": {
+            "type": "string"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "isPrivate": {
+            "type": "boolean"
+          },
+          "isShared": {
+            "type": "boolean"
+          },
+          "lguId": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number"
+              },
+              "longitude": {
+                "type": "number"
+              }
+            }
+          },
+          "mediaUrls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "model": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "plateNumber": {
+            "type": "string"
+          },
+          "serialNumber": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "type": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "vendor": {
+            "type": "string"
+          },
+          "yearPurchased": {
+            "type": "string"
+          }
+        }
+      },
+      "channels": {
+        "type": "object",
+        "properties": {
+          "accountId": {
+            "type": "string"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      },
+      "device-registrations": {
+        "type": "object",
+        "properties": {
+          "fcmToken": {
+            "type": "string",
+            "description": "Firebase Cloud Messaging token for push notifications"
+          },
+          "geohash": {
+            "type": "string",
+            "description": "Geohash representing the device's location"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "description": "Latitude of the device location"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "description": "Longitude of the device location"
+          },
+          "updatedAt": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Timestamp of the last update in Unix epoch format"
+          },
+          "userId": {
+            "type": "string",
+            "description": "Unique identifier for the user"
+          },
+          "userType": {
+            "type": "string",
+            "description": "Type of user (e.g., anonymous, registered)"
+          }
+        }
+      },
+      "devices": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "description": "Latitude of the device location"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "description": "Longitude of the device location"
+          }
+        }
+      },
+      "directory": {
+        "type": "object",
+        "properties": {
+          "accountId": {
+            "type": "string",
+            "description": "Unique identifier for the account"
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "city": {
+                "type": "string"
+              },
+              "full": {
+                "type": "string"
+              },
+              "island": {
+                "type": "string"
+              },
+              "municipality": {
+                "type": "string"
+              },
+              "province": {
+                "type": "string"
+              },
+              "region": {
+                "type": "string"
+              }
+            }
+          },
+          "brgyId": {
+            "type": "string",
+            "description": "Barangay identifier"
+          },
+          "category": {
+            "type": "string",
+            "description": "Category of the directory entry"
+          },
+          "channelId": {
+            "type": "string",
+            "description": "Channel identifier"
+          },
+          "commId": {
+            "type": "string",
+            "description": "Communication ID"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of creation"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "isShared": {
+            "type": "boolean"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "lguId": {
+            "type": "string",
+            "description": "Local government unit identifier"
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number",
+                "format": "double"
+              },
+              "longitude": {
+                "type": "number",
+                "format": "double"
+              }
+            }
+          },
+          "mediaUrls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of media URLs"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the entry"
+          },
+          "status": {
+            "type": "string",
+            "description": "Current status"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "type": {
+            "type": "string",
+            "description": "Type of entity (e.g., government, commercial)"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of last update"
+          },
+          "yearConstructed": {
+            "type": "string",
+            "description": "Year of construction"
+          }
+        }
+      },
+      "feedback": {
+        "type": "object",
+        "properties": {
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when the message was created"
+          },
+          "message": {
+            "type": "string",
+            "description": "Message content"
+          },
+          "userEmail": {
+            "type": "string",
+            "format": "email",
+            "description": "Email of the user who sent the message"
+          },
+          "userId": {
+            "type": "string",
+            "description": "Unique identifier of the user"
+          }
+        }
+      },
+      "hikvision-alarms": {
+        "type": "object",
+        "properties": {
+          "dateTime": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of the event"
+          },
+          "deviceSerial": {
+            "type": "string",
+            "description": "Serial number of the device"
+          },
+          "eventDescription": {
+            "type": "string",
+            "description": "Description of the event"
+          },
+          "eventType": {
+            "type": "string",
+            "description": "Type of event"
+          }
+        }
+      },
+      "incidents": {
+        "type": "object",
+        "properties": {
+          "documentId": {
+            "type": "string"
+          },
+          "tokens": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "isAnonymous": {
+            "type": "boolean"
+          },
+          "isArchived": {
+            "type": "boolean"
+          },
+          "isRead": {
+            "type": "boolean"
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number"
+              },
+              "longitude": {
+                "type": "number"
+              }
+            }
+          },
+          "locationHistory": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "number"
+                },
+                "longitude": {
+                  "type": "number"
+                },
+                "updatedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
+          },
+          "metadata": {
+            "type": "object"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "iot-ph": {
+        "type": "object",
+        "properties": {
+          "AccountSid": {
+            "type": "string",
+            "description": "Unique identifier for the account"
+          },
+          "ApiVersion": {
+            "type": "string",
+            "description": "Version of the API used"
+          },
+          "Body": {
+            "type": "string",
+            "description": "Message body containing emergency SOS details"
+          },
+          "From": {
+            "type": "string",
+            "description": "Sender's phone number"
+          },
+          "FromCity": {
+            "type": "string",
+            "description": "City of the sender"
+          },
+          "FromCountry": {
+            "type": "string",
+            "description": "Country of the sender"
+          },
+          "FromState": {
+            "type": "string",
+            "description": "State of the sender"
+          },
+          "FromZip": {
+            "type": "string",
+            "description": "ZIP code of the sender"
+          },
+          "MessageSid": {
+            "type": "string",
+            "description": "Unique identifier for the message"
+          },
+          "MessagingServiceSid": {
+            "type": "string",
+            "description": "Identifier for the messaging service"
+          },
+          "NumMedia": {
+            "type": "string",
+            "description": "Number of media attachments"
+          },
+          "NumSegments": {
+            "type": "string",
+            "description": "Number of message segments"
+          },
+          "SmsMessageSid": {
+            "type": "string",
+            "description": "SMS message identifier"
+          },
+          "SmsSid": {
+            "type": "string",
+            "description": "SMS unique identifier"
+          },
+          "SmsStatus": {
+            "type": "string",
+            "description": "Status of the SMS message"
+          },
+          "To": {
+            "type": "string",
+            "description": "Recipient's phone number"
+          },
+          "ToCity": {
+            "type": "string",
+            "description": "City of the recipient"
+          },
+          "ToCountry": {
+            "type": "string",
+            "description": "Country of the recipient"
+          },
+          "ToState": {
+            "type": "string",
+            "description": "State of the recipient"
+          },
+          "ToZip": {
+            "type": "string",
+            "description": "ZIP code of the recipient"
+          }
+        }
+      },
+      "properties": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "Physical address"
+          },
+          "barangay": {
+            "type": "string",
+            "description": "Barangay name"
+          },
+          "community": {
+            "type": "string",
+            "description": "Community identifier"
+          },
+          "createdAt": {
+            "type": "integer",
+            "description": "Timestamp when the record was created"
+          },
+          "devices": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Device identifier"
+              },
+              "lgu": {
+                "type": "string",
+                "description": "LGU identifier"
+              }
+            }
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number",
+                "description": "Geographical latitude"
+              },
+              "longitude": {
+                "type": "number",
+                "description": "Geographical longitude"
+              },
+              "name": {
+                "type": "string",
+                "description": "Location name"
+              }
+            }
+          },
+          "owner": {
+            "type": "string",
+            "description": "Owner identifier"
+          },
+          "tuya": {
+            "type": "object",
+            "properties": {
+              "homeId": {
+                "type": "integer",
+                "description": "Tuya home ID"
+              }
+            }
+          },
+          "users": {
+            "type": "object",
+            "properties": {
+              "userId": {
+                "type": "string",
+                "description": "User identifier"
+              },
+              "createdAt": {
+                "type": "integer",
+                "description": "Timestamp when the user was created"
+              }
+            }
+          }
+        }
+      },
+      "push-alerts": {
+        "type": "object",
+        "properties": {
+          "alertId": {
+            "type": "string",
+            "description": "Unique identifier for the alert"
+          },
+          "body": {
+            "type": "string",
+            "description": "Message content of the alert"
+          },
+          "channelIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of channels where the alert is sent"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when the alert was created"
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number",
+                "description": "Geographical latitude"
+              },
+              "longitude": {
+                "type": "number",
+                "description": "Geographical longitude"
+              }
+            }
+          },
+          "mediaUrl": {
+            "type": "string",
+            "description": "URL of associated media"
+          },
+          "radius": {
+            "type": "number",
+            "description": "Effective radius of the alert in kilometers"
+          },
+          "status": {
+            "type": "string",
+            "description": "Current status of the alert"
+          },
+          "timelineId": {
+            "type": "string",
+            "description": "Associated timeline identifier"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the alert"
+          },
+          "totalSent": {
+            "type": "integer",
+            "description": "Total number of alerts sent"
+          },
+          "totalUnsent": {
+            "type": "integer",
+            "description": "Total number of alerts unsent"
+          }
+        }
+      },
+      "pushed-alerts-test": {
+        "type": "object",
+        "properties": {
+          "alertId": {
+            "type": "string",
+            "description": "Unique identifier for the alert"
+          },
+          "body": {
+            "type": "string",
+            "description": "Message content of the alert"
+          },
+          "channelIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of channels where the alert is sent"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when the alert was created"
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number",
+                "description": "Geographical latitude"
+              },
+              "longitude": {
+                "type": "number",
+                "description": "Geographical longitude"
+              },
+              "radius": {
+                "type": "number",
+                "description": "Effective radius of the alert in kilometers"
+              }
+            }
+          },
+          "status": {
+            "type": "string",
+            "description": "Current status of the alert"
+          },
+          "timelineId": {
+            "type": "string",
+            "description": "Associated timeline identifier"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the alert"
+          },
+          "totalSent": {
+            "type": "integer",
+            "description": "Total number of alerts successfully sent"
+          },
+          "totalUnsent": {
+            "type": "integer",
+            "description": "Total number of alerts that failed to send"
+          }
+        }
+      },
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Display name of the alert type"
+            },
+            "value": {
+              "type": "string",
+              "description": "Internal value identifier for the alert type"
+            },
+            "color": {
+              "type": "string",
+              "description": "Hex color code representing the alert type"
+            },
+            "icon": {
+              "type": "string",
+              "description": "Icon name associated with the alert type"
+            }
+          }
+        }
+      },
+      "tokens": {
+        "type": "object",
+        "properties": {
+          "accessToken": {
+            "type": "string",
+            "description": "Authentication token string"
+          },
+          "areaDomain": {
+            "type": "string",
+            "description": "API domain URL for the area"
+          },
+          "expireTime": {
+            "type": "integer",
+            "description": "Token expiration timestamp (in milliseconds)"
+          },
+          "updatedAt": {
+            "type": "integer",
+            "description": "Timestamp of the last update (in milliseconds)"
+          }
+        }
+      },
+      "tuya-iot-devices": {
+        "type": "object",
+        "properties": {
+          "createdAt": {
+            "type": "integer",
+            "description": "Timestamp when the device was created (in milliseconds)"
+          },
+          "devId": {
+            "type": "string",
+            "description": "Device unique identifier"
+          },
+          "homeId": {
+            "type": "integer",
+            "description": "Associated Tuya home ID"
+          },
+          "icon": {
+            "type": "string",
+            "description": "URL of the device icon"
+          },
+          "name": {
+            "type": "string",
+            "description": "Device name"
+          },
+          "productId": {
+            "type": "string",
+            "description": "Product identifier for the device"
+          },
+          "userId": {
+            "type": "string",
+            "description": "User identifier who owns the device"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "Universal unique identifier of the device"
+          }
+        }
+      },
+      "user-api-keys": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "API key for authenticating requests"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Email address associated with the API key"
+          }
+        }
+      },
+      "users": {
+        "type": "object",
+        "properties": {
+          "uuids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of UUID strings"
+          },
+          "fname": {
+            "type": "string",
+            "description": "First name of the user"
+          },
+          "lname": {
+            "type": "string",
+            "description": "Last name of the user"
+          },
+          "gender": {
+            "type": "string",
+            "description": "Gender of the user"
+          },
+          "mobileNumber": {
+            "type": "string",
+            "description": "User's mobile number"
+          },
+          "password": {
+            "type": "string",
+            "description": "User's hashed password"
+          },
+          "tuya": {
+            "type": "object",
+            "properties": {
+              "username": {
+                "type": "string",
+                "description": "Tuya username"
+              },
+              "password": {
+                "type": "string",
+                "description": "Tuya password"
+              },
+              "uid": {
+                "type": "string",
+                "description": "Tuya user ID"
+              }
+            }
+          }
+        }
+      },
+      "users-anonymous": {
+        "type": "object",
+        "properties": {
+          "channels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of subscribed channels"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when the user was created"
+          },
+          "devicesRegistered": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of registered device UUIDs"
+          },
+          "isAnonymous": {
+            "type": "boolean",
+            "description": "Flag indicating if the user is anonymous"
+          },
+          "lastSignedIn": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of the user's last sign-in"
+          }
+        }
+      },
+      "users-gov": {
+        "type": "object",
+        "properties": {
+          "brgyId": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of Barangay IDs"
+          },
+          "commId": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of Community IDs"
+          },
+          "fname": {
+            "type": "string",
+            "description": "First name"
+          },
+          "lname": {
+            "type": "string",
+            "description": "Last name"
+          },
+          "gender": {
+            "type": "string",
+            "description": "Gender"
+          },
+          "isDeleted": {
+            "type": "boolean",
+            "description": "Indicates if the user is deleted"
+          },
+          "isPrivate": {
+            "type": "boolean",
+            "description": "Indicates if the profile is private"
+          },
+          "isResponseTeam": {
+            "type": "boolean",
+            "description": "Indicates if the user is part of the response team"
+          },
+          "lguId": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of LGU IDs"
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number",
+                "description": "Geographical latitude"
+              },
+              "longitude": {
+                "type": "number",
+                "description": "Geographical longitude"
+              }
+            }
+          },
+          "resourceCode": {
+            "type": "string",
+            "description": "Unique resource code"
+          },
+          "status": {
+            "type": "string",
+            "description": "Current status of the user"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of role tags"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title or designation"
+          },
+          "type": {
+            "type": "string",
+            "description": "Type/category (e.g., 'bdrrmo')"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when the record was last updated"
           }
         }
       }

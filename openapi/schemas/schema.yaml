@@ -1,0 +1,16 @@
+type: array
+items:
+  type: object
+  properties:
+    name:
+      type: string
+      description: "Display name of the alert type"
+    value:
+      type: string
+      description: "Internal value identifier for the alert type"
+    color:
+      type: string
+      description: "Hex color code representing the alert type"
+    icon:
+      type: string
+      description: "Icon name associated with the alert type"

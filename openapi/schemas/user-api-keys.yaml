@@ -1,0 +1,9 @@
+type: object
+properties:
+  apiKey:
+    type: string
+    description: "API key for authenticating requests"
+  email:
+    type: string
+    format: email
+    description: "Email address associated with the API key"

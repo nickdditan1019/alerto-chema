@@ -1,0 +1,65 @@
+type: object
+properties:
+  brgyId:
+    type: array
+    items:
+      type: string
+    description: "List of Barangay IDs"
+  commId:
+    type: array
+    items:
+      type: string
+    description: "List of Community IDs"
+  fname:
+    type: string
+    description: "First name"
+  lname:
+    type: string
+    description: "Last name"
+  gender:
+    type: string
+    description: "Gender"
+  isDeleted:
+    type: boolean
+    description: "Indicates if the user is deleted"
+  isPrivate:
+    type: boolean
+    description: "Indicates if the profile is private"
+  isResponseTeam:
+    type: boolean
+    description: "Indicates if the user is part of the response team"
+  lguId:
+    type: array
+    items:
+      type: string
+    description: "List of LGU IDs"
+  location:
+    type: object
+    properties:
+      latitude:
+        type: number
+        description: "Geographical latitude"
+      longitude:
+        type: number
+        description: "Geographical longitude"
+  resourceCode:
+    type: string
+    description: "Unique resource code"
+  status:
+    type: string
+    description: "Current status of the user"
+  tags:
+    type: array
+    items:
+      type: string
+    description: "List of role tags"
+  title:
+    type: string
+    description: "Title or designation"
+  type:
+    type: string
+    description: "Type/category (e.g., 'bdrrmo')"
+  updatedAt:
+    type: string
+    format: date-time
+    description: "Timestamp when the record was last updated"

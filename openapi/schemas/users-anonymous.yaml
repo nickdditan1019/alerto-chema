@@ -1,0 +1,23 @@
+type: object
+properties:
+  channels:
+    type: array
+    items:
+      type: string
+    description: "List of subscribed channels"
+  createdAt:
+    type: string
+    format: date-time
+    description: "Timestamp when the user was created"
+  devicesRegistered:
+    type: array
+    items:
+      type: string
+    description: "List of registered device UUIDs"
+  isAnonymous:
+    type: boolean
+    description: "Flag indicating if the user is anonymous"
+  lastSignedIn:
+    type: string
+    format: date-time
+    description: "Timestamp of the user's last sign-in"

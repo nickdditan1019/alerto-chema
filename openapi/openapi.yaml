@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
-  title: Alerto API
+  title: Alerto Stage API
   version: 1.0.0
-  description: API schema for Alerto system.
+  description: API schema for Alerto Stage system.
 
 paths: { }
 
@@ -12,3 +12,41 @@ components:
       $ref: "./schemas/alerts.yaml"
     account-gov:
       $ref: "./schemas/account-gov.yaml"
+    assets:
+      $ref: "./schemas/assets.yaml"
+    channels:
+      $ref: "./schemas/channels.yaml"
+    device-registrations:
+      $ref: "./schemas/device-registrations.yaml"
+    devices:
+      $ref: "./schemas/devices.yaml"
+    directory:
+      $ref: "./schemas/directory.yaml"
+    feedback:
+      $ref: "./schemas/feedback.yaml"
+    hikvision-alarms:
+      $ref: "./schemas/hikvision-alarms.yaml"
+    incidents:
+      $ref: "./schemas/incidents.yaml"
+    iot-ph:
+      $ref: "./schemas/iot-ph.yaml"
+    properties:
+      $ref: "./schemas/properties.yaml"
+    push-alerts:
+      $ref: "./schemas/push-alerts.yaml"
+    pushed-alerts-test:
+      $ref: "./schemas/pushed-alerts-test.yaml"
+    schema:
+      $ref: "./schemas/schema.yaml"
+    tokens:
+      $ref: "./schemas/tokens.yaml"
+    tuya-iot-devices:
+      $ref: "./schemas/tuya-iot-devices.yaml"
+    user-api-keys:
+      $ref: "./schemas/user-api-keys.yaml"
+    users:
+      $ref: "./schemas/users.yaml"
+    users-anonymous:
+      $ref: "./schemas/users-anonymous.yaml"
+    users-gov:
+      $ref: "./schemas/users-gov.yaml"

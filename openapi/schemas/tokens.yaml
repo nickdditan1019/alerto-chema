@@ -1,0 +1,14 @@
+type: object
+properties:
+  accessToken:
+    type: string
+    description: "Authentication token string"
+  areaDomain:
+    type: string
+    description: "API domain URL for the area"
+  expireTime:
+    type: integer
+    description: "Token expiration timestamp (in milliseconds)"
+  updatedAt:
+    type: integer
+    description: "Timestamp of the last update (in milliseconds)"
