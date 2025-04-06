@@ -12,6 +12,7 @@ This is the firebase schema for the Alerto PH application.
 
 2. Generate bundle yaml schema:
    ```bash
+   cd openapi
    npx swagger-cli bundle openapi.yaml -o bundled.yaml
    ```
    
