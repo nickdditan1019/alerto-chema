@@ -16,4 +16,4 @@ This is the firebase schema for the Alerto PH application.
    npx swagger-cli bundle openapi.yaml -o bundled.yaml
    ```
    
-### Running the API
+### Push yaml file to Redocly
