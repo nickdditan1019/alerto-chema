@@ -1,0 +1,81 @@
+type: object
+properties:
+  accountId:
+    type: string
+    description: "Unique identifier for the account"
+  address:
+    type: object
+    properties:
+      city:
+        type: string
+      full:
+        type: string
+      island:
+        type: string
+      municipality:
+        type: string
+      province:
+        type: string
+      region:
+        type: string
+  brgyId:
+    type: string
+    description: "Barangay identifier"
+  category:
+    type: string
+    description: "Category of the directory entry"
+  channelId:
+    type: string
+    description: "Channel identifier"
+  commId:
+    type: string
+    description: "Communication ID"
+  createdAt:
+    type: string
+    format: date-time
+    description: "Timestamp of creation"
+  isDeleted:
+    type: boolean
+  isShared:
+    type: boolean
+  keywords:
+    type: array
+    items:
+      type: string
+  lguId:
+    type: string
+    description: "Local government unit identifier"
+  location:
+    type: object
+    properties:
+      latitude:
+        type: number
+        format: double
+      longitude:
+        type: number
+        format: double
+  mediaUrls:
+    type: array
+    items:
+      type: string
+    description: "List of media URLs"
+  name:
+    type: string
+    description: "Name of the entry"
+  status:
+    type: string
+    description: "Current status"
+  tags:
+    type: array
+    items:
+      type: string
+  type:
+    type: string
+    description: "Type of entity (e.g., government, commercial)"
+  updatedAt:
+    type: string
+    format: date-time
+    description: "Timestamp of last update"
+  yearConstructed:
+    type: string
+    description: "Year of construction"

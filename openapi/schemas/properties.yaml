@@ -1,0 +1,53 @@
+type: object
+properties:
+  address:
+    type: string
+    description: "Physical address"
+  barangay:
+    type: string
+    description: "Barangay name"
+  community:
+    type: string
+    description: "Community identifier"
+  createdAt:
+    type: integer
+    description: "Timestamp when the record was created"
+  devices:
+    type: object
+    properties:
+      id:
+        type: string
+        description: "Device identifier"
+      lgu:
+        type: string
+        description: "LGU identifier"
+  location:
+    type: object
+    properties:
+      latitude:
+        type: number
+        description: "Geographical latitude"
+      longitude:
+        type: number
+        description: "Geographical longitude"
+      name:
+        type: string
+        description: "Location name"
+  owner:
+    type: string
+    description: "Owner identifier"
+  tuya:
+    type: object
+    properties:
+      homeId:
+        type: integer
+        description: "Tuya home ID"
+  users:
+    type: object
+    properties:
+      userId:
+        type: string
+        description: "User identifier"
+      createdAt:
+        type: integer
+        description: "Timestamp when the user was created"

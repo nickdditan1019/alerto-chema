@@ -1,0 +1,15 @@
+type: object
+properties:
+  dateTime:
+    type: string
+    format: date-time
+    description: "Timestamp of the event"
+  deviceSerial:
+    type: string
+    description: "Serial number of the device"
+  eventDescription:
+    type: string
+    description: "Description of the event"
+  eventType:
+    type: string
+    description: "Type of event"

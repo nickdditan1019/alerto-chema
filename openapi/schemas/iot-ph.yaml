@@ -1,0 +1,62 @@
+type: object
+properties:
+  AccountSid:
+    type: string
+    description: "Unique identifier for the account"
+  ApiVersion:
+    type: string
+    description: "Version of the API used"
+  Body:
+    type: string
+    description: "Message body containing emergency SOS details"
+  From:
+    type: string
+    description: "Sender's phone number"
+  FromCity:
+    type: string
+    description: "City of the sender"
+  FromCountry:
+    type: string
+    description: "Country of the sender"
+  FromState:
+    type: string
+    description: "State of the sender"
+  FromZip:
+    type: string
+    description: "ZIP code of the sender"
+  MessageSid:
+    type: string
+    description: "Unique identifier for the message"
+  MessagingServiceSid:
+    type: string
+    description: "Identifier for the messaging service"
+  NumMedia:
+    type: string
+    description: "Number of media attachments"
+  NumSegments:
+    type: string
+    description: "Number of message segments"
+  SmsMessageSid:
+    type: string
+    description: "SMS message identifier"
+  SmsSid:
+    type: string
+    description: "SMS unique identifier"
+  SmsStatus:
+    type: string
+    description: "Status of the SMS message"
+  To:
+    type: string
+    description: "Recipient's phone number"
+  ToCity:
+    type: string
+    description: "City of the recipient"
+  ToCountry:
+    type: string
+    description: "Country of the recipient"
+  ToState:
+    type: string
+    description: "State of the recipient"
+  ToZip:
+    type: string
+    description: "ZIP code of the recipient"

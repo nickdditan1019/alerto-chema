@@ -1,0 +1,94 @@
+type: object
+properties:
+  id:
+    type: string
+    nullable: true
+    description: Unique identifier for the alert.
+    example: "a1b2c3d4-5e6f-7g8h-9i0j-12k3m4n5o6p"
+  accountId:
+    type: string
+    description: Account ID of the alert.
+    example: "a3A2K6FHBDAnFCRM9L3"
+  address:
+    type: array
+    items:
+      type: string
+    description: Address of the reported alert.
+    example: ["Tagaytay City, Cavite, Philippines"]
+  channelIds:
+    type: array
+    items:
+      type: string
+    description: Channels where the alert is published.
+    example: ["NEARBY"]
+  location:
+    type: object
+    description: Geographic location of the alert.
+    properties:
+      latitude:
+        type: number
+        format: double
+        example: 14.1345
+      longitude:
+        type: number
+        format: double
+        example: 121.3456
+  mediaUrls:
+    type: array
+    items:
+      type: string
+    description: URLs of media related to the alert.
+    example: ["https://example.com/image.jpg"]
+  message:
+    type: string
+    nullable: true
+    description: Message of the alert.
+    example: "Flash flooding reported in Marikina River. Water level rising."
+  publisher:
+    type: object
+    description: Publisher of the alert.
+    properties:
+      name:
+        type: string
+        example: "National Weather Service"
+      avatarUrl:
+        type: string
+        example: "https://example.com/avatar.jpg"
+  radius:
+    type: number
+    format: double
+    description: The radius of the alert (in meters).
+    example: 5000
+  resourceCode:
+    type: string
+    description: Code identifying the alert type.
+    example: "FLOOD-001"
+  status:
+    type: string
+    description: Status of the alert.
+    example: "warning"
+  tag:
+    type: string
+    description: Tag categorizing the alert.
+    example: "flood"
+  timeline:
+    type: array
+    description: Timeline of alert updates.
+    items:
+      type: object
+      properties:
+        mediaUrls:
+          type: array
+          items:
+            type: string
+          example: ["https://example.com/timeline.jpg"]
+        createdAt:
+          type: string
+          format: date-time
+          example: "2024-03-23T12:00:00Z"
+  title:
+    type: string
+    minLength: 5
+    maxLength: 100
+    description: Title of the alert.
+    example: "Flood Alert in Marikina"

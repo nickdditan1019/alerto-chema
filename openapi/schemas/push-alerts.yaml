@@ -1,0 +1,47 @@
+type: object
+properties:
+  alertId:
+    type: string
+    description: "Unique identifier for the alert"
+  body:
+    type: string
+    description: "Message content of the alert"
+  channelIds:
+    type: array
+    items:
+      type: string
+    description: "List of channels where the alert is sent"
+  createdAt:
+    type: string
+    format: date-time
+    description: "Timestamp when the alert was created"
+  location:
+    type: object
+    properties:
+      latitude:
+        type: number
+        description: "Geographical latitude"
+      longitude:
+        type: number
+        description: "Geographical longitude"
+  mediaUrl:
+    type: string
+    description: "URL of associated media"
+  radius:
+    type: number
+    description: "Effective radius of the alert in kilometers"
+  status:
+    type: string
+    description: "Current status of the alert"
+  timelineId:
+    type: string
+    description: "Associated timeline identifier"
+  title:
+    type: string
+    description: "Title of the alert"
+  totalSent:
+    type: integer
+    description: "Total number of alerts sent"
+  totalUnsent:
+    type: integer
+    description: "Total number of alerts unsent"

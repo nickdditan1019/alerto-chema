@@ -1,0 +1,10 @@
+type: object
+properties:
+  accountId:
+    type: string
+  isDeleted:
+    type: boolean
+  name:
+    type: string
+  type:
+    type: string

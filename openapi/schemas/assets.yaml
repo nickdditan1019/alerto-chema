@@ -1,0 +1,76 @@
+type: object
+properties:
+  accountId:
+    type: string
+  address:
+    type: object
+    properties:
+      city:
+        type: string
+      full:
+        type: string
+      island:
+        type: string
+      municipality:
+        type: string
+      province:
+        type: string
+      region:
+        type: string
+  brgyId:
+    type: string
+  color:
+    type: string
+  comId:
+    type: string
+  condition:
+    type: string
+  createdAt:
+    type: string
+    format: date-time
+  description:
+    type: string
+  isDeleted:
+    type: boolean
+  isPrivate:
+    type: boolean
+  isShared:
+    type: boolean
+  lguId:
+    type: array
+    items:
+      type: string
+  location:
+    type: object
+    properties:
+      latitude:
+        type: number
+      longitude:
+        type: number
+  mediaUrls:
+    type: array
+    items:
+      type: string
+  model:
+    type: string
+  name:
+    type: string
+  plateNumber:
+    type: string
+  serialNumber:
+    type: string
+  status:
+    type: string
+  tags:
+    type: array
+    items:
+      type: string
+  type:
+    type: string
+  updatedAt:
+    type: string
+    format: date-time
+  vendor:
+    type: string
+  yearPurchased:
+    type: string

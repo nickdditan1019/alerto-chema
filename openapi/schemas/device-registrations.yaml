@@ -1,0 +1,26 @@
+type: object
+properties:
+  fcmToken:
+    type: string
+    description: "Firebase Cloud Messaging token for push notifications"
+  geohash:
+    type: string
+    description: "Geohash representing the device's location"
+  latitude:
+    type: number
+    format: double
+    description: "Latitude of the device location"
+  longitude:
+    type: number
+    format: double
+    description: "Longitude of the device location"
+  updatedAt:
+    type: integer
+    format: int64
+    description: "Timestamp of the last update in Unix epoch format"
+  userId:
+    type: string
+    description: "Unique identifier for the user"
+  userType:
+    type: string
+    description: "Type of user (e.g., anonymous, registered)"

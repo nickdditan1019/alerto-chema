@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: Alerto API
+  version: 1.0.0
+  description: API schema for Alerto system.
+
+paths: { }
+
+components:
+  schemas:
+    alerts:
+      $ref: "./schemas/alerts.yaml"
+    account-gov:
+      $ref: "./schemas/account-gov.yaml"

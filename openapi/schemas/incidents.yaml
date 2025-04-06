@@ -1,0 +1,41 @@
+type: object
+properties:
+  documentId:
+    type: string
+  tokens:
+    type: array
+    items:
+      type: string
+  id:
+    type: string
+  isAnonymous:
+    type: boolean
+  isArchived:
+    type: boolean
+  isRead:
+    type: boolean
+  location:
+    type: object
+    properties:
+      latitude:
+        type: number
+      longitude:
+        type: number
+  locationHistory:
+    type: array
+    items:
+      type: object
+      properties:
+        latitude:
+          type: number
+        longitude:
+          type: number
+        updatedAt:
+          type: string
+          format: date-time
+  metadata:
+    type: object
+  notes:
+    type: array
+    items:
+      type: string

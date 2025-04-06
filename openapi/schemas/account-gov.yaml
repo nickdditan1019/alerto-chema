@@ -1,0 +1,23 @@
+type: object
+properties:
+  avatarUrl:
+    type: string
+    nullable: true
+  channel:
+    type: string
+    nullable: true
+  directoryId:
+    type: string
+  location:
+    type: string
+    nullable: true
+  name:
+    type: string
+  psgCode:
+    type: string
+  showRAR:
+    type: boolean
+  users:
+    type: object
+    additionalProperties:
+      type: string
