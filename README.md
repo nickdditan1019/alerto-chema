@@ -6,7 +6,7 @@ This is the firebase schema for the Alerto PH application.
 
 1. Clone the repository:
    ```bash
-   git clone git@github.com:nickdditan1019/alerto-chema.git
+   git clone git@https://github.com/WiredField/alerto-ph-schema.git
    cd alerto-chema
    ```
 

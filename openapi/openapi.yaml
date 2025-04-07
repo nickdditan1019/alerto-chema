@@ -6,6 +6,118 @@ info:
 
 paths: { }
 
+x-tagGroups:
+  - name: Schemas
+    tags:
+      - Alerts
+      - Account Gov
+      - Assets
+      - Channels
+      - Device Registrations
+      - Devices
+      - Directory
+      - Feedback
+      - Hikvision Alarms
+      - Incidents
+      - IoT PH
+      - Properties
+      - Push Alerts
+      - Pushed Alerts Test
+      - Schema
+      - Tokens
+      - Tuya IoT Devices
+      - User API Keys
+      - Users
+      - Users Anonymous
+      - Users Gov
+
+tags:
+  - name: Alerts
+    x-displayName: Alerts Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/alerts" />
+  - name: Account Gov
+    x-displayName: Account Gov Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/account-gov" />
+  - name: Assets
+    x-displayName: Assets Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/assets" />
+  - name: Channels
+    x-displayName: Channels Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/channels" />
+  - name: Device Registrations
+    x-displayName: Device Registrations Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/device-registrations" />
+  - name: Devices
+    x-displayName: Devices Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/devices" />
+  - name: Directory
+    x-displayName: Directory Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/directory" />
+  - name: Feedback
+    x-displayName: Feedback Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/feedback" />
+  - name: Hikvision Alarms
+    x-displayName: Hikvision Alarms Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/hikvision-alarms" />
+  - name: Incidents
+    x-displayName: Incidents Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/incidents" />
+  - name: IoT PH
+    x-displayName: IoT PH Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/iot-ph" />
+  - name: Properties
+    x-displayName: Properties Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/properties" />
+  - name: Push Alerts
+    x-displayName: Push Alerts Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/push-alerts" />
+  - name: Pushed Alerts Test
+    x-displayName: Pushed Alerts Test Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/pushed-alerts-test" />
+  - name: Schema
+    x-displayName: Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/schema" />
+  - name: Tokens
+    x-displayName: Tokens Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/tokens" />
+  - name: Tuya IoT Devices
+    x-displayName: Tuya IoT Devices Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/tuya-iot-devices" />
+  - name: User API Keys
+    x-displayName: User API Keys Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/user-api-keys" />
+  - name: Users
+    x-displayName: Users Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/users" />
+  - name: Users Anonymous
+    x-displayName: Users Anonymous Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/users-anonymous" />
+  - name: Users Gov
+    x-displayName: Users Gov Schema
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/users-gov" />
+
+
 components:
   schemas:
     alerts:

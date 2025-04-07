@@ -6,6 +6,141 @@
     "description": "API schema for Alerto Stage system."
   },
   "paths": {},
+  "x-tagGroups": [
+    {
+      "name": "Schemas",
+      "tags": [
+        "Alerts",
+        "Account Gov",
+        "Assets",
+        "Channels",
+        "Device Registrations",
+        "Devices",
+        "Directory",
+        "Feedback",
+        "Hikvision Alarms",
+        "Incidents",
+        "IoT PH",
+        "Properties",
+        "Push Alerts",
+        "Pushed Alerts Test",
+        "Schema",
+        "Tokens",
+        "Tuya IoT Devices",
+        "User API Keys",
+        "Users",
+        "Users Anonymous",
+        "Users Gov"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "Alerts",
+      "x-displayName": "Alerts Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/alerts\" />\n"
+    },
+    {
+      "name": "Account Gov",
+      "x-displayName": "Account Gov Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/account-gov\" />\n"
+    },
+    {
+      "name": "Assets",
+      "x-displayName": "Assets Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/assets\" />\n"
+    },
+    {
+      "name": "Channels",
+      "x-displayName": "Channels Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/channels\" />\n"
+    },
+    {
+      "name": "Device Registrations",
+      "x-displayName": "Device Registrations Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/device-registrations\" />\n"
+    },
+    {
+      "name": "Devices",
+      "x-displayName": "Devices Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/devices\" />\n"
+    },
+    {
+      "name": "Directory",
+      "x-displayName": "Directory Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/directory\" />\n"
+    },
+    {
+      "name": "Feedback",
+      "x-displayName": "Feedback Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/feedback\" />\n"
+    },
+    {
+      "name": "Hikvision Alarms",
+      "x-displayName": "Hikvision Alarms Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/hikvision-alarms\" />\n"
+    },
+    {
+      "name": "Incidents",
+      "x-displayName": "Incidents Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/incidents\" />\n"
+    },
+    {
+      "name": "IoT PH",
+      "x-displayName": "IoT PH Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/iot-ph\" />\n"
+    },
+    {
+      "name": "Properties",
+      "x-displayName": "Properties Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/properties\" />\n"
+    },
+    {
+      "name": "Push Alerts",
+      "x-displayName": "Push Alerts Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/push-alerts\" />\n"
+    },
+    {
+      "name": "Pushed Alerts Test",
+      "x-displayName": "Pushed Alerts Test Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/pushed-alerts-test\" />\n"
+    },
+    {
+      "name": "Schema",
+      "x-displayName": "Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/schema\" />\n"
+    },
+    {
+      "name": "Tokens",
+      "x-displayName": "Tokens Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/tokens\" />\n"
+    },
+    {
+      "name": "Tuya IoT Devices",
+      "x-displayName": "Tuya IoT Devices Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/tuya-iot-devices\" />\n"
+    },
+    {
+      "name": "User API Keys",
+      "x-displayName": "User API Keys Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/user-api-keys\" />\n"
+    },
+    {
+      "name": "Users",
+      "x-displayName": "Users Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/users\" />\n"
+    },
+    {
+      "name": "Users Anonymous",
+      "x-displayName": "Users Anonymous Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/users-anonymous\" />\n"
+    },
+    {
+      "name": "Users Gov",
+      "x-displayName": "Users Gov Schema",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/users-gov\" />\n"
+    }
+  ],
   "components": {
     "schemas": {
       "alerts": {
